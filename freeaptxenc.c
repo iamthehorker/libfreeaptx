@@ -1,6 +1,7 @@
 /*
  * aptX encoder utility
  * Copyright (C) 2018-2020  Pali Rohár <pali.rohar@gmail.com>
+ * Copyright (C) 2025      Hunter Wardlaw <pali.rohar@gmail.com>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -25,7 +26,7 @@
 #include <io.h>
 #endif
 
-#include <openaptx.h>
+#include <freeaptx.h>
 
 static unsigned char input_buffer[512*3*2*4];
 static unsigned char output_buffer[512*6];
@@ -49,7 +50,7 @@ int main(int argc, char *argv[])
 
     for (i = 1; i < argc; ++i) {
         if (strcmp(argv[i], "-h") == 0 || strcmp(argv[i], "--help") == 0) {
-            fprintf(stderr, "aptX encoder utility %d.%d.%d (using libopenaptx %d.%d.%d)\n", OPENAPTX_MAJOR, OPENAPTX_MINOR, OPENAPTX_PATCH, aptx_major, aptx_minor, aptx_patch);
+            fprintf(stderr, "aptX encoder utility %d.%d.%d (using libfreeaptx %d.%d.%d)\n", FREEAPTX_MAJOR, FREEAPTX_MINOR, FREEAPTX_PATCH, aptx_major, aptx_minor, aptx_patch);
             fprintf(stderr, "\n");
             fprintf(stderr, "This utility encodes a raw 24 bit signed stereo\n");
             fprintf(stderr, "samples from stdin to aptX or aptX HD on stdout\n");

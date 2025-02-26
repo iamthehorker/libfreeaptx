@@ -1,6 +1,7 @@
 /*
  * Open Source implementation of Audio Processing Technology codec (aptX)
  * Copyright (C) 2018-2020  Pali Rohár <pali.rohar@gmail.com>
+ * Copyright (C) 2025      Hunter Wardlaw <pali.rohar@gmail.com>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -17,12 +18,12 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301 USA
  */
 
-#ifndef OPENAPTX_H
-#define OPENAPTX_H
+#ifndef FREEAPTX_H
+#define FREEAPTX_H
 
-#define OPENAPTX_MAJOR 0
-#define OPENAPTX_MINOR 2
-#define OPENAPTX_PATCH 0
+#define FREEAPTX_MAJOR 0
+#define FREEAPTX_MINOR 2
+#define FREEAPTX_PATCH 1
 
 #include <stddef.h>
 
